@@ -1,1 +1,1 @@
-These are proabably not good
+Just my VapourSynth Scripts, they're probably bad
