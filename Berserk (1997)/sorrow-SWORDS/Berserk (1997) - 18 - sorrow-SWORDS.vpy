@@ -27,7 +27,7 @@ damaged_start, damaged_end = 16513, 16800
 
 ###Source
 src 	= core.lsmas.LWLibavSource(r'F:\enc\[BDMV][120118] BERSERK BD-BOX\[BDMV][120118] BERSERK BD-BOX VOL4\BERSERK_VOL4\BERSERK_VOL4\BDMV\STREAM\00003.m2ts')
-dvd 	= core.d2v.Source(r'C:\Users\DaSkyBro\Desktop\bbb\e18-d2vw.d2v') #R1 DISC 5 VTS_01_1.VOB
+dvd 	= core.d2v.Source(r'C:\Users\User\Desktop\bbb\e18-d2vw.d2v') #R1 DISC 5 VTS_01_1.VOB
 dvd		= core.vivtc.VFM(dvd, order=1).vivtc.VDecimate()[16481:16770]
 crop 	= core.std.Crop(src, 240, 240, 0, 0)
 src16	= core.fmtc.bitdepth(crop, bits=16)

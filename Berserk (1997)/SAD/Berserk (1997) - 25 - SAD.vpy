@@ -24,7 +24,7 @@ ed = (30336, 32255)
 
 ###Source
 src 	= core.lsmas.LWLibavSource(r'F:\enc\[BDMV][120118] BERSERK BD-BOX\[BDMV][120118] BERSERK BD-BOX VOL5\BERSERK_VOL5\BERSERK_VOL5\BDMV\STREAM\00004.m2ts')
-dvd 	= core.d2v.Source(r'C:\Users\DaSkyBro\Desktop\bbb\e25-d2vw.d2v') #R1 DISC 6 VTS_02-6.VOB
+dvd 	= core.d2v.Source(r'C:\Users\User\Desktop\bbb\e25-d2vw.d2v') #R1 DISC 6 VTS_02-6.VOB
 dvd		= core.vivtc.VFM(dvd, order=1).vivtc.VDecimate()[3764:4303]
 crop 	= core.std.Crop(src, 240, 240, 0, 0)
 src16	= core.fmtc.bitdepth(crop, bits=16)
